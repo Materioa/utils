@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Ebook Mode",
+  "version": "1.0",
+  "description": "Convert web content to a clean ebook-like view with proper formatting and styling",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open in Ebook Mode"
+  }
+}
