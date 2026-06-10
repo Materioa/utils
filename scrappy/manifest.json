@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "scrappy",
+  "version": "1.0",
+  "description": "Scrape PDFs and PPT images from the Parul elearning portal with a single click.",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://elearning.paruluniversity.ac.in/*"],
+      "js": ["scraper.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ]
+}
